@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+a{
+    color: white !important;
+}
+.english{
+    border-right:1px solid gray;
+    color: gray;
+ 
+}
+.phone{
+   
+    border: 2px solid navajowhite;
+}
+.mail{
+  
+}
+.cont{
+    margin-left: auto !important;
+    width: 100%;
+    text-align: end;
+  
+    border: 2px solid red;
+    justify-content: flex-end;
+    
+  
+}
