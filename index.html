@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="./assets/Fonts/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/dist/assets/owl.theme.default.min.css">
     <link href="./assets/CSS/style.css" rel="stylesheet">
     
  
@@ -20,75 +22,513 @@
     <title>Blood Bank</title>
   </head>
   <body>
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav cont">
-              <div class="language">
-                <a class="nav-link" href="#">عربي</a>
-                <a class="nav-link  english" href="#" >ENG</a>
-             
-           
-                <a class="nav-link" href="#"> <i class="fab fa-facebook-f fa-lg white-text mr-4 fa-2x" style="color:white;"> </i></a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" href="#">  <i class="fab fa-twitter fa-lg white-text  mr-4 fa-2x" style="color: white;"> </i></a>
-                <a class="nav-link" href="#"><i class="fab fa-whatsapp fa-lg white-text mr-4  fa-2x" style="color:white;"></i></a>
-
-             
-          
-            
- 
-            
-                <a class="nav-link mail" href="#">name@name.com</a>
-            <a class="nav-link phone" href="#">966506954964+</a>
-          
-            
-
-          </div>
-        </div>
-      </nav>-->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Left</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="//codeply.com">Codeply</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mx-auto order-0 mr-auto">
-            <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
-            <a class="navbar-brand mx-auto" href="#"><i class="fab fa-facebook-f fa-lg white-text mr-4 fa-2x" style="color:white;"> </i>
-            </a>
-           
-         
+    <div  id="navbar">
       
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <ul class='navbar1'>
+        <li class="left-side">
+          <a  href="#" style="color: #a61216;">عربي</a>
+          <a  href="#" class="english" >EN</a>
+
+        </li>
+        <li class="center-side">
+          <a  href="#"><i class="fab fa-facebook-f mr-3" style="color:white;"></i>
+          </a>
+             <a href="#"><i class="fab fa-instagram  mr-3" style="color: white;"></i>
+             </a>
+          <a href="www.fdfd.com" ><i class="fab fa-twitter  mr-3" style="color: white;"></i></a>
+          <a target="_blank" href="#" ><i class="fab fa-whatsapp  mr-3" style="color:white;"></i></a>
+    
+        </li>
+        <li class="right-side">
+          <a class="mail" href="#">name@gmail.com</a>
+          <a href="#" class="phone">966506954964+
+            <i class="fas fa-phone-volume" style="color: white;"></i>
+          </a>
+          
+          
+          
+         
+        </li>
+    
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                  <img src="./assets/imgs/logo.png">
+            </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./index.html" style="color: #a61216;">الرئيسيه <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">عن بنك الدم</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./article-details.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./Donation-requests.html">طلبات التبرع</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact-us.html" tabindex="-1">اتصل بنا</a>
+                        </li>
+                      </ul>
+                      <div class="my-2 my-lg-0">
+                        <a class="account my-2 my-sm-0" href="./sign-up.html">انشاء حساب جديد</a>
+                      
+                        <button class="btn  my-2 my-sm-0" type="submit">الدخول</button>
+                      </div>
+                    </div>
+                  </nav>
+                  <section class="header">
+                    <div class="headerText">
+                      <h3>بنك الدم نمضي قدما لصحة افضل</h3>
+                      <p>
+                          ها النص هو مثال لنص يمكن ان يستبدل<br> في نفس المساحة  لقد تم توليد هذا النص <br>من مولد النص العربي
+                      </p>
+                       
+                        
+
+                    </div>
+                </section>
+                <section class="about">
+                  <div class="headerText">
+                    
+                      <p>
+                  <i class="redWord" style="color: #a61216;">بنك الدم</i>
+                         هذا النص هو مثال لنص ممكن أن يستبدل في نفس<br>
+                         المساحة لقد تم توليد هذا النص من مولد النص العربي , حيث <br>
+                         يمكنك ان تولد هذا النص أو العديد من النصوص الأخرى<br>
+                         .إضافة الى زيادة عدد الحروف التي يولدها التطبيق<br>
+                         يطلع على صورة حقيقية لتصميم الموقع 
+                         
+                      </p>
+                     
+                      
+
+                  </div>
+              </section>
+              <section id="slider" class="pt-5">
+                <h1>المقالات</h1>
+                <div class="container-fluid">
+                 
+                  <div class="slider">
+                      <div class="owl-carousel" id="slide">
+                        <div class="slider-card">
+                          <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/imgs/p1.jpg" alt="" >
+                           
+                          </div>
+                          <div class="icon hart  p-2">
+                            <i class="far fa-heart" style="color: white;"></i>
+                
+                        </div>
+                          <h5 class="mb-0 p-2"><b>طريقة الوقايه من الأمراض</b></h5>
+                          <p class=" p-4">هذا النص هو مثال لنص ممكن أن يستبدل في نفسه<br>
+                            المساحة لقد تم توليد هذا النص من مولد النص العربي <br></p>
+                            <div class="text-center pb-2">
+                              <button type="button" class="btn">التفاصيل</button>
+                            </div>
+                           
+                        </div>
+                        <div class="slider-card">
+                          <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/imgs/p2.jpg" alt="">
+                          </div>
+                          <div class="icon hart  p-2">
+                            <i class="far fa-heart" style="color: white;"></i>
+                
+                        </div>
+                          <h5 class="mb-0 p-2"><b>طريقة الوقايه من الأمراض</b></h5>
+                          <p class=" p-4">هذا النص هو مثال لنص ممكن أن يستبدل في نفسه<br>
+                            المساحة لقد تم توليد هذا النص من مولد النص العربي <br></p>
+                            <div class="text-center pb-2">
+                              <a href="./inside-request.html" type="button" class="btn">التفاصيل</a>
+                            </div>
+                            
+                        </div>
+                        <div class="slider-card">
+                          <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/imgs/p1.jpg" alt="">
+                          </div>
+                          <div class="icon hart  p-2">
+                            <i class="far fa-heart" style="color: white;"></i>
+                
+                        </div>
+                          <h5 class="mb-0 p-2"><b>طريقة الوقايه من الأمراض</b></h5>
+                          <p class="p-4">هذا النص هو مثال لنص ممكن أن يستبدل في نفسه<br>
+                            المساحة لقد تم توليد هذا النص من مولد النص العربي <br></p>
+                            <div class="text-center pb-2">
+                              <a href="./inside-request.html" type="button" class="btn">التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                          <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/imgs/p1.jpg" alt="">
+                          </div>
+                          <div class="icon hart  p-2">
+                            <i class="far fa-heart" style="color: white;"></i>
+                
+                        </div>
+                          <h5 class="mb-0 p-2"><b>طريقة الوقايه من الأمراض</b></h5>
+                          <p class=" p-4">هذا النص هو مثال لنص ممكن أن يستبدل في نفسه<br>
+                            المساحة لقد تم توليد هذا النص من مولد النص العربي <br></p>
+                            <div class="text-center pb-2">
+                              <a href="./inside-request.html" type="button" class="btn">التفاصيل</a>
+                            </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <!-----------------end of slider---------------------------->
+              </section>
+              <section class="orders">
+                <h1>طلبات التبرع</h1>
+                <div class="container-fluid">
+                  <div class="row DonatationRequest">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                      
+                      <label class="choose">اختر فصيلة الدم</label>
+                    
+                        <select  class="form-select type" aria-label="Default select example">
+                          <option value="rigatoni">AB</option>
+                        <option value="dave">A+</option>
+                        <option value="pumpernickel">B+</option>
+                        <option value="reeses">O</option>
+                        <option value="dave">AB</option>
+                        <option value="reeses">A-</option>
+                        <option value="pumpernickel">B-</option>
+                        <option value="reeses">O-</option>
+                        <option value="pumpernickel">AB-</option>
+                       
+                      </select>
+
+                   
+                     
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                      <label class="choose">اختر مدينتك</label>
+                      <select class="form-select type" aria-label="Default select example">
+                        <option selected>الجيزة</option>
+                        <option value="1">القاهرة</option>
+                        <option value="2">المنصورة</option>
+                        <option value="3">الاسكندرية</option>
+                      </select>
+
+                    </div>
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                      <button type="button" class="btn  search-btn">
+                        <i class="fas fa-search lg-2x" style=" color: black;"></i>
+                      </button>
+                     
+
+                    </div>
+                     
+                 </div>
+                 <div class="row  datatype">
+                  <div class="col-sm-12 data p-5" >
+                    <label class="leter text-center">+B</label>
+                    <ul>
+                      <li>
+                        <label class="caseData1">اسم الحالة:</label>
+                        <label class="caseData">أحمد محمد أحمد</label>
+                      </li>
+                      <li>
+                       <label class="caseData1"> المستشفى:</label>
+                       <label class="caseData">القصر العيني</label>
+                     </li>
+                     <li>
+                       <label class="caseData1">المدينة:</label>
+                       <label class="caseData">المنصورة</label>
+                     </li>
+                      
+                    </ul>
+                    <a href="./inside-request.html" type="button" class="btn details">التفاصيل</a>
+                  </div>
+
+                 </div>
+              
+                 <div class="row  datatype">
+                  <div class="col-sm-12 data p-5">
+                    <label class="leter text-center">+A</label>
+                    <ul>
+                      <li>
+                        <label class="caseData1">اسم الحالة:</label>
+                        <label class="caseData">أحمد محمد أحمد</label>
+                      </li>
+                      <li>
+                       <label class="caseData1"> المستشفى:</label>
+                       <label class="caseData">القصر العيني</label>
+                     </li>
+                     <li>
+                       <label class="caseData1">المدينة:</label>
+                       <label class="caseData">المنصورة</label>
+                     </li>
+                      
+                    </ul>
+                    <a  href="" type="button" class="btn details " style="background-color: rgb(45 62 80) ; color: white;">التفاصيل</a>
+                  </div>
+
+                 </div>
+                 <div class="row  datatype">
+                  <div class="col-sm-12 data p-5">
+                    <label class="leter text-center">+AB</label>
+                    <ul>
+                      <li>
+                        <label class="caseData1">اسم الحالة:</label>
+                        <label class="caseData">أحمد محمد أحمد</label>
+                      </li>
+                      <li>
+                       <label class="caseData1"> المستشفى:</label>
+                       <label class="caseData">القصر العيني</label>
+                     </li>
+                     <li>
+                       <label class="caseData1">المدينة:</label>
+                       <label class="caseData">المنصورة</label>
+                     </li>
+                      
+                    </ul>
+                    <button type="button" class="btn details">التفاصيل</button>
+                  </div>
+
+                 </div>
+                 <div class="row  datatype">
+                  <div class="col-sm-12 data p-5">
+                    <label class="leter text-center">-O</label>
+                    <ul>
+                      <li>
+                        <label class="caseData1">اسم الحالة:</label>
+                        <label class="caseData">أحمد محمد أحمد</label>
+                      </li>
+                      <li>
+                       <label class="caseData1"> المستشفى:</label>
+                       <label class="caseData">القصر العيني</label>
+                     </li>
+                     <li>
+                       <label class="caseData1">المدينة:</label>
+                       <label class="caseData">المنصورة</label>
+                     </li>
+                      
+                    </ul>
+                    <a href="./inside-request.html" type="button" class="btn details">التفاصيل</a>
+                  </div>
+
+                 </div>
+                 <button type="button" class="btn  btn-dar">المزيد</button>
+                
+
+                </div>
+                
+
+              </section>
+              <section class="contact">
+                <h3>اتصل بنا</h3>
+                <div class="container-fluid">
+                  <p>يمكنك الاتصال بنا للاستفسار عن معلومة وسيتم الرد عليكم</p>
+                  <button type="button" class="btn">
+                     12154551    002+
+                     <img src="./assets/imgs/whats.png">
+                     </button>
+                  <label>
+                    
+                  </label>
+
+                </div>
+
+              </section>
+              <!---------------------------------------------------->
+              <section class="BankApp">
+                <div class="container-fluid">
+                  <!--<div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h3 style="color:black;" class="h3header" >تطبيق بنك الدم</h3>
+                  <p>
+                      هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة,<br>
+                      لقد تم توليد هذا النص من مولد النص العربي
+                  </p>
+                  <div class="row google " >
+                    <h3 class="pr-10" style="color: gray;">متوفر على</h3>
+                    <div class="col-lg-6 col-md-6 col-sm-12 googleimg" style="background-color: #a61216;">
+                      <img src="./assets/imgs/google.png" >
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <img src="./assets/imgs/ios.png"  >
+
+                    </div>
+                   
+                    
+
+                   </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                      <img src="./assets/imgs/App.png" class="appimg">
+
+                    </div>
+
+                 
+
+                </div>
+                </div>-->
+                <div class="headerText">
+                  <h3 style="color:black;" class="h3header" >تطبيق بنك الدم</h3>
+                  <p>
+                      هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة,<br>
+                      لقد تم توليد هذا النص من مولد النص العربي
+                  </p>
+                  <div class="google justify-content-center">
+                    <h3 class="" style="color: gray;">متوفر على</h3>
+                    <img src="./assets/imgs/google.png" class="gool">
+                    <img src="./assets/imgs/ios.png" class="ios">
+                   
+                  </div>
+                </div>
+               
+                <img src="./assets/imgs/App.png" class="appimg">
+                </div>
+              
+               
+            </section>
+            <!------------------------------FOOTER----------------------------------->
+            <!-- Footer -->
+<footer class="text-center text-white" style="background-color:#1a1f25">
+  <!-- Grid container -->
+  <div class="container p-4">
+ 
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row p-5">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div class="col-auto">
+            <p class="pt-2">
+              <img class="footer-Logo" src="./assets/imgs/Icon.png">
+            
+              <strong style="color:#a61216 ;">بنك الدم</strong>
+            </p>
+          </div>
+          
+
+          <ul class="list-unstyled mb-0 footer-left-side" >
+            <li>
+              <h4 class="">بنك الدم</h4>
+            </li>
+            <li>
+              <p class="text-white">
+                هذا النص هو مثال لنص ممكن ان يستبدل<br>
+                في نفس المساحة ,لقد تم توليد هذا النص<br>
+                من مولد النص العربي حيث يمكن ان تولد<br>
+                مثل هذا النص او العديد من النصوص الأخرى<br>
+                إضافة الى زيادة عدد الحروف التي يولدها
+
+              </p>
+            </li>
+          
+          </ul>
         </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">name@name.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">966506954964+</a>
-                </li>
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0  Footercenter-side" >
+         <a href="./index.html">
+          <h5 class="text-uppercase" style="color: #a61216;">الرئيسيه</h5>
+        </a>
+         
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">عن بنك الدم</a>
+            </li>
+            <li>
+              <a href="./article-details.html" class="text-white">المقالات</a>
+            </li>
+            <li>
+              <a href="./Donation-requests.html" class="text-white">طلبات التبرع</a>
+            </li>
+            <li>
+              <a href="./contact-us.html" class="text-white">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 FooterRight-side">
+          <h5 class="text-uppercase" style="color: #a61216;">متوفر على</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <img src="./assets/imgs/google1.png" class="footerimg1">
+            </li>
+            <li>
+             <img src="./assets/imgs/ios1.png" class="footerimg2">
+            </li>
+           
+          </ul>
+        </div>
+      
+      </div>
+    </section>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="row pt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="col-lg-4 col-md-6">
+    <a class="text-white m-2" href="#!" role="button">
+      <i class="fab fa-facebook-f "></i>
+    </a>
+  <a class="text-white m-2" href="#!" role="button" >
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a class="text-white m-2" href="#!" role="button">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a class="text-white m-2" href="#!" role="button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  </div>
+  <div class="col-lg-4 col-md-6">
+
+      جميع الحقوق محفوظة ل
+      <span style="color: #a61216;">بنك الدم  </span>
+
+   © 2019 
+   <a class="text-white" href="https://mdbootstrap.com/"></a>
+     
+
+    </div>
+ 
+     
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+            
+           
+            
+              
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
+    <script src="./assets/plugins/dist/owl.carousel.min.js"></script>
+    <script defer src="./assets/Fonts/fontawesome-free-5.15.4-web/js/all.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <script src="./assets/plugins/dist/owl.carousel.min.js"></script>
+    <script src="./assets/js/blood_Bank.js"></script>
 
   </body>
   </html>
