@@ -61,23 +61,23 @@
                           <a class="nav-link" href="./index.html" style="color: #a61216;">الرئيسيه <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">عن بنك الدم</a>
+                          <a class="nav-link" href="./about.html">عن بنك الدم</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">المقالات</a>
+                          <a class="nav-link" href="./article-details.html">المقالات</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">طلبات التبرع</a>
+                          <a class="nav-link" href="./Donation-requests.html">طلبات التبرع</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">من نحن</a>
+                          <a class="nav-link" href="./about.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#" tabindex="-1">اتصل بنا</a>
+                          <a class="nav-link" href="./contact-us.html" tabindex="-1">اتصل بنا</a>
                         </li>
                       </ul>
                       <div class="my-2 my-lg-0  text-center ask" >
-                        <a class="p-2" type="button" style="background-color: #2d3e50; color: white; width: 200px; height: 50px;">طلب التبرع</a>
+                        <a onclick="location.href='inside-request.html'" class="p-2" type="button" style="background-color: #2d3e50; color: white; width: 200px; height: 50px;">طلب التبرع</a>
                       </div>
                     </div>
                   </nav>
@@ -94,16 +94,22 @@
               <input type="text" placeholder="البريد الالكتروني" name="uname" required>
               <input type="text" placeholder="تاريخ الميلاد" name="uname" required>
               <input type="text" placeholder="فصيلة الدم" name="uname" required>
-              <div class="form-group">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
                
-                <select class="form-control" placeholder="المحافظة" id="exampleFormControlSelect1">
-                  <option>بورسعيد</option>
-                  <option>الدقهليه</option>
-                  <option>الجيزة</option>
-                  <option>القاهرة</option>
-                  <option>دمياط</option>
-                </select>
-              </div>
+                    <select class="form-control" placeholder="المحافظة" id="exampleFormControlSelect1">
+                      <option>بورسعيد</option>
+                      <option>الدقهليه</option>
+                      <option>الجيزة</option>
+                      <option>القاهرة</option>
+                      <option>دمياط</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="col-sm-12">
+                      
               <div class="form-group">
                 <select class="form-control" aria-placeholder="المدينة" id="exampleFormControlSelect2">
                   <option>بورسعيد</option>
@@ -113,6 +119,11 @@
                   <option>دمياط</option>
                 </select>
               </div>
+                  
+                </div>
+
+              </div>
+         
       
               <input type="text" placeholder="رقم الهاتف" name="uname" required>
               <input type="text" placeholder="اخر تاريخ تبرع" name="uname" required>
@@ -185,7 +196,7 @@
               
                       <!--Grid column-->
                       <div class="col-lg-4 col-md-6 mb-4 mb-md-0  Footercenter-side" >
-                       <a href="./index.html">
+                       <a href="./index.html" class="footer-home-link">
                         <h5 class="text-uppercase" style="color: #a61216;">الرئيسيه</h5>
                       </a>
                        
@@ -213,10 +224,13 @@
               
                         <ul class="list-unstyled mb-0">
                           <li>
-                            <img src="./assets/imgs/google1.png" class="footerimg1">
+                            <a href="#">  <img src="./assets/imgs/google1.png" class="footerimg1"></a>
+
+                          
                           </li>
                           <li>
-                           <img src="./assets/imgs/ios1.png" class="footerimg2">
+                            <a href="#"> <img src="./assets/imgs/ios1.png" class="footerimg2"></a>
+                          
                           </li>
                          
                         </ul>

@@ -39,8 +39,8 @@
     
         </li>
         <li class="right-side">
-            <a class="mr-3" href="" style="color: white;">انشاء حساب جديد</a>
-            <a href="" style="color: #fdab0b;">الدخول</a>
+            <a class="mr-3" href="./sign-up.html" style="color: white;">انشاء حساب جديد</a>
+            <a href="./sign_in.html" style="color: #fdab0b;">الدخول</a>
            
          
         </li>
@@ -61,89 +61,90 @@
                           <a class="nav-link" href="./index.html" style="color: #a61216;">الرئيسيه <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">عن بنك الدم</a>
+                          <a class="nav-link" href="./about.html">عن بنك الدم</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">المقالات</a>
+                          <a class="nav-link" href="./article-details.html">المقالات</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">طلبات التبرع</a>
+                          <a class="nav-link" href="./Donation-requests.html">طلبات التبرع</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">من نحن</a>
+                          <a class="nav-link" href="./about.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#" tabindex="-1">اتصل بنا</a>
+                          <a class="nav-link" href="./contact-us.html" tabindex="-1">اتصل بنا</a>
                         </li>
                       </ul>
                       <div class="my-2 my-lg-0  text-center ask" >
-                        <a class="p-2" type="button" style="background-color: #2d3e50; color: white; width: 200px; height: 50px;">طلب التبرع</a>
+                        <a href="./Donation-requests.html" class="p-2" type="button" style="background-color: #2d3e50; color: white; width: 200px; height: 50px;">طلب التبرع</a>
                       </div>
                     </div>
                   </nav>
-<section class="requests text-center">
+<!--section class="requests text-center"-->
+<section class="orders text-center">
+
     <div class="container heade">
         <span style="color:gray;">الرئيسيه<b>/طلبات التبرع</b></span>
 
     </div>
     <h1 class="p-2" style="color:#a61216">طلبات التبرع</h1>
     <div class="container">
-      <div class="chooseType d-flex p-5" style="background-color: #fdab0b; position: relative; height: auto;">
-        
-          <div>
-          <label class="choose-type">اختر فصيلة الدم</label>
+      <div class="row DonatationRequest">
+        <div class="col-lg-6 col-md-12 col-sm-12 select-parent1">
           
-         
-             
-            <select  class="form-select type select1" aria-label="Default select example">
-                <option value="rigatoni">AB</option>
-              <option value="dave">A+</option>
-              <option value="pumpernickel">B+</option>
-              <option value="reeses">O</option>
-              <option value="dave">AB</option>
-              <option value="reeses">A-</option>
-              <option value="pumpernickel">B-</option>
-              <option value="reeses">O-</option>
-              <option value="pumpernickel">AB-</option>
-             
-            </select>
-
-          </div>
-        
+            <select  class="form-select " aria-label="Default select example">
+              <option value="rigatoni">اختر فصيلة الدم</option>
+              <option value="rigatoni">AB</option>
+            <option value="dave">A+</option>
+            <option value="pumpernickel">B+</option>
+            <option value="reeses">O</option>
+            <option value="dave">AB</option>
+            <option value="reeses">A-</option>
+            <option value="pumpernickel">B-</option>
+            <option value="reeses">O-</option>
+            <option value="pumpernickel">AB-</option>
+           
+          </select>
 
        
          
-        
-        <div>
-          <label class="choose-type1">اختر مدينتك</label>
-          
-            <select class="form-select type select2" aria-label="Default select example">
-                <option selected>الجيزة</option>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 select-parent2">
+          <div class="row form-selectParent2">
+            <div class="col-lg-6 col-md-12">
+              <select class="form-select"  aria-label="Default select example"> 
+                <option selected>اختر مدينتك</option>
+                <option >الجيزة</option>
                 <option value="1">القاهرة</option>
                 <option value="2">المنصورة</option>
                 <option value="3">الاسكندرية</option>
               </select>
+              </div>
+              <div  class="col-lg-6 col-md-12">
+                <button type="button" class="btn  search-btn">
+                  <i class="fas fa-search lg-2x" style=" color: black;"></i>
+                </button>
+               
+
+              </div>
 
           </div>
-          
-
         
-        <div>
-          <button type="button" class="btn  search-btn " class="search">
-            <i class="fas fa-search lg-2x" style=" color: black;"></i>
-          </button>
+
+        </div>
+       
          
-
-
-        </div>
-        </div>
+     </div>
+     
+     
     
          
      
      <div class="row  datatype">
       <div class="col-sm-12 data p-5">
         <label class="leter text-center">+B</label>
-        <ul>
+        <ul class="choose">
           <li>
             <label class="caseData1">اسم الحالة:</label>
             <span class="caseData">أحمد محمد أحمد</span>
@@ -158,7 +159,7 @@
          </li>
           
         </ul>
-        <button type="button" class="btn details">التفاصيل</button>
+        <button  onclick="location.href='inside-request.html'" type="button" class="btn details detailsbtn">التفاصيل</button>
       </div>
 
      </div>
@@ -166,7 +167,7 @@
      <div class="row  datatype">
       <div class="col-sm-12 data p-5">
         <label class="leter text-center">+A</label>
-        <ul>
+        <ul class="choose">
           <li>
             <label class="caseData1">اسم الحالة:</label>
             <span class="caseData">أحمد محمد أحمد</span>
@@ -181,14 +182,14 @@
          </li>
           
         </ul>
-        <button type="button" class="btn details " style="background-color: rgb(45 62 80) ; color: white;">التفاصيل</button>
+        <button  onclick="location.href='inside-request.html'" type="button" class="btn details " style="background-color: rgb(45 62 80) ; color: white;">التفاصيل</button>
       </div>
 
      </div>
      <div class="row  datatype">
       <div class="col-sm-12 data p-5">
         <label class="leter text-center">+AB</label>
-        <ul>
+        <ul class="choose">
           <li>
             <label class="caseData1">اسم الحالة:</label>
             <span class="caseData">أحمد محمد أحمد</span>
@@ -203,14 +204,14 @@
          </li>
           
         </ul>
-        <button type="button" class="btn details">التفاصيل</button>
+        <button  onclick="location.href='inside-request.html'" type="button" class="btn details detailsbtn">التفاصيل</button>
       </div>
 
      </div>
      <div class="row  datatype">
       <div class="col-sm-12 data p-5">
         <label class="leter text-center">-O</label>
-        <ul>
+        <ul class="choose">
           <li>
             <label class="caseData1">اسم الحالة:</label>
             <label class="caseData">أحمد محمد أحمد</label>
@@ -225,14 +226,14 @@
          </li>
           
         </ul>
-        <button type="button" class="btn  details">التفاصيل</button>
+        <button  onclick="location.href='inside-request.html'" type="button" class="btn  details detailsbtn">التفاصيل</button>
       </div>
 
      </div>
      <div class="row  datatype">
         <div class="col-sm-12 data p-5">
           <label class="leter text-center">-B</label>
-          <ul>
+          <ul class="choose">
             <li>
               <label class="caseData1">اسم الحالة:</label>
               <label class="caseData">أحمد محمد أحمد</label>
@@ -247,14 +248,14 @@
            </li>
             
           </ul>
-          <button type="button" class="btn  details">التفاصيل</button>
+          <button  onclick="location.href='inside-request.html'" type="button" class="btn  details detailsbtn">التفاصيل</button>
         </div>
   
        </div>
        <div class="row  datatype">
         <div class="col-sm-12 data p-5">
           <label class="leter text-center">-A</label>
-          <ul>
+          <ul class="choose">
             <li>
               <label class="caseData1">اسم الحالة:</label>
               <label class="caseData">أحمد محمد أحمد</label>
@@ -269,14 +270,14 @@
            </li>
             
           </ul>
-          <button type="button" class="btn  details">التفاصيل</button>
+          <button  onclick="location.href='inside-request.html'" type="button" class="btn  details detailsbtn">التفاصيل</button>
         </div>
   
        </div>
        <div class="row  datatype">
         <div class="col-sm-12 data p-5">
           <label class="leter text-center">O</label>
-          <ul>
+          <ul class="choose">
             <li>
               <label class="caseData1">اسم الحالة:</label>
               <label class="caseData">أحمد محمد أحمد</label>
@@ -291,14 +292,14 @@
            </li>
             
           </ul>
-          <button type="button" class="btn  details">التفاصيل</button>
+          <button onclick="location.href='inside-request.html'" type="button" class="btn  details detailsbtn">التفاصيل</button>
         </div>
   
        </div>
        <div class="row  datatype">
         <div class="col-sm-12 data p-5">
           <label class="leter text-center">-AB</label>
-          <ul>
+          <ul class="choose">
             <li>
               <label class="caseData1">اسم الحالة:</label>
               <label class="caseData">أحمد محمد أحمد</label>
@@ -313,7 +314,10 @@
            </li>
             
           </ul>
-          <button type="button" class="btn  details">التفاصيل</button>
+          <div class="text-center">
+            <button  onclick="location.href='inside-request.html'" type="button" class="btn  details detailsbtn">التفاصيل</button>
+
+          </div>
         </div>
   
        </div>
@@ -321,7 +325,9 @@
         <nav aria-label="Page navigation example ">
             <ul class="pagination justify-content-center">
               <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><</a>
+               
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-right" style="color: gray;"></i></a>
+                
               </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -330,7 +336,7 @@
               <li class="page-item"><a class="page-link" href="#">5</a></li>
               <li class="page-item"><a class="page-link" href="#">6</a></li>
               <li class="page-item">
-                <a class="page-link" href="#">></a>
+                <a class="page-link" href="#"><i class="fas fa-angle-left" style="color: gray;"></i></a>
               </li>
             </ul>
           </nav>
@@ -344,122 +350,125 @@
     
 
   </section>
-          <!------------------------------FOOTER----------------------------------->
+     <!------------------------------FOOTER----------------------------------->
             <!-- Footer -->
             <footer class="text-center text-white" style="background-color:#1a1f25">
-                <!-- Grid container -->
-                <div class="container p-4">
-               
-                  <!-- Section: Links -->
-                  <section class="">
-                    <!--Grid row-->
-                    <div class="row p-5">
-                      <!--Grid column-->
-                      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <div class="col-auto">
-                          <p class="pt-2">
-                            <img class="footer-Logo" src="./assets/imgs/Icon.png">
-                          
-                            <strong style="color:#a61216 ;">بنك الدم</strong>
+              <!-- Grid container -->
+              <div class="container p-4">
+             
+                <!-- Section: Links -->
+                <section class="">
+                  <!--Grid row-->
+                  <div class="row p-5">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                      <div class="col-auto">
+                        <p class="pt-2">
+                          <img class="footer-Logo" src="./assets/imgs/Icon.png">
+                        
+                          <strong style="color:#a61216 ;">بنك الدم</strong>
+                        </p>
+                      </div>
+                      
+            
+                      <ul class="list-unstyled mb-0 footer-left-side" >
+                        <li>
+                          <h4 class="">بنك الدم</h4>
+                        </li>
+                        <li>
+                          <p class="text-white">
+                            هذا النص هو مثال لنص ممكن ان يستبدل<br>
+                            في نفس المساحة ,لقد تم توليد هذا النص<br>
+                            من مولد النص العربي حيث يمكن ان تولد<br>
+                            مثل هذا النص او العديد من النصوص الأخرى<br>
+                            إضافة الى زيادة عدد الحروف التي يولدها
+            
                           </p>
-                        </div>
-                        
-              
-                        <ul class="list-unstyled mb-0 footer-left-side" >
-                          <li>
-                            <h4 class="">بنك الدم</h4>
-                          </li>
-                          <li>
-                            <p class="text-white">
-                              هذا النص هو مثال لنص ممكن ان يستبدل<br>
-                              في نفس المساحة ,لقد تم توليد هذا النص<br>
-                              من مولد النص العربي حيث يمكن ان تولد<br>
-                              مثل هذا النص او العديد من النصوص الأخرى<br>
-                              إضافة الى زيادة عدد الحروف التي يولدها
-              
-                            </p>
-                          </li>
-                        
-                        </ul>
-                      </div>
-              
-                      <!--Grid column-->
-                      <div class="col-lg-4 col-md-6 mb-4 mb-md-0  Footercenter-side" >
-                       <a href="./index.html">
-                        <h5 class="text-uppercase" style="color: #a61216;">الرئيسيه</h5>
-                      </a>
-                       
-              
-                        <ul class="list-unstyled mb-0">
-                          <li>
-                            <a href="#!" class="text-white">عن بنك الدم</a>
-                          </li>
-                          <li>
-                            <a href="#!" class="text-white">المقالات</a>
-                          </li>
-                          <li>
-                            <a href="#!" class="text-white">طلبات التبرع</a>
-                          </li>
-                          <li>
-                            <a href="#!" class="text-white">اتصل بنا</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <!--Grid column-->
-              
-                      <!--Grid column-->
-                      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 FooterRight-side">
-                        <h5 class="text-uppercase" style="color: #a61216;">متوفر على</h5>
-              
-                        <ul class="list-unstyled mb-0">
-                          <li>
-                            <img src="./assets/imgs/google1.png" class="footerimg1">
-                          </li>
-                          <li>
-                           <img src="./assets/imgs/ios1.png" class="footerimg2">
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    
+                        </li>
+                      
+                      </ul>
                     </div>
-                  </section>
-                </div>
-                <!-- Grid container -->
-              
-                <!-- Copyright -->
-                <div class="row pt-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                  <div class="col-lg-4 col-md-6">
-                  <a class="text-white m-2" href="#!" role="button">
-                    <i class="fab fa-facebook-f "></i>
-                  </a>
-                <a class="text-white m-2" href="#!" role="button" >
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a class="text-white m-2" href="#!" role="button">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a class="text-white m-2" href="#!" role="button">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              
-                </div>
-                <div class="col-lg-4 col-md-6">
-              
-                    جميع الحقوق محفوظة ل
-                    <span style="color: #a61216;">بنك الدم  </span>
-              
-                 © 2019 
-                 <a class="text-white" href="https://mdbootstrap.com/"></a>
-                   
-              
+            
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0  Footercenter-side" >
+                     <a href="./index.html" class="footer-home-link">
+                      <h5 class="text-uppercase" style="color: #a61216;">الرئيسيه</h5>
+                    </a>
+                     
+            
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <a href="./about.html" class="text-white">عن بنك الدم</a>
+                        </li>
+                        <li>
+                          <a href="./article-details.html" class="text-white">المقالات</a>
+                        </li>
+                        <li>
+                          <a href="./Donation-requests.html" class="text-white">طلبات التبرع</a>
+                        </li>
+                        <li>
+                          <a href="./contact-us.html" class="text-white">اتصل بنا</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 FooterRight-side">
+                      <h5 class="text-uppercase" style="color: #a61216;">متوفر على</h5>
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <a href="#"><img src="./assets/imgs/google1.png" class="footerimg1"></a>
+                        
+                        </li>
+                        <li>
+                          <a href="">
+                            <img src="./assets/imgs/ios1.png" class="footerimg2">
+                          </a>
+                        
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  
                   </div>
-               
-                   
+                </section>
+              </div>
+              <!-- Grid container -->
+            
+              <!-- Copyright -->
+              <div class="row" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-lg-6 col-md-6">
+                <a class="text-white " href="#!" role="button">
+                  <i class="fab fa-facebook-f "></i>
+                </a>
+              <a class="text-white m-2" href="#!" role="button" >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="text-white m-2" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="text-white m-2" href="#!" role="button">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            
+              </div>
+              <div class="col-lg-6 col-md-6">
+            
+                جميع الحقوق محفوظة ل
+                <span style="color: #a61216; padding: 0px;margin: 0px;">بنك الدم  </span>
+          
+             © 2019 
+             <a class="text-white" href="https://mdbootstrap.com/"></a>
+                 
+            
                 </div>
-                <!-- Copyright -->
-              </footer>
-              <!-- Footer -->
+             
+                 
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
                           
                          
                           
